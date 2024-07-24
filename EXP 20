@@ -1,0 +1,5 @@
+student('sai','krishna','csa1738').
+student('mahe','krishna','csa1738').
+
+find(Sn,Tn,Sc):-
+student(Sn,Tn,Sc).
