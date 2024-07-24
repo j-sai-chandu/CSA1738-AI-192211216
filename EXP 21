@@ -1,0 +1,11 @@
+% Define the base case: moving a single disk from Source to Destination
+move(1, Source, Destination, _) :-
+    write('Move disk from '), write(Source), write(' to '), write(Destination), nl.
+
+% Define the recursive case: moving N disks
+move(N, Source, Destination, Aux) :-
+    N > 1,
+    M is N - 1,
+    move(M, Source, Aux, Destination),
+    move(1, Source, Destination, _),
+    move(M, Aux, Destination, Source).
