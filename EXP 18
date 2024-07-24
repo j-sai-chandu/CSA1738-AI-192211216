@@ -1,0 +1,5 @@
+person('Alice','2005','24').
+person('sai','2004',23).
+
+find(Name,DOB,A):-
+person(Name,DOB,A).
